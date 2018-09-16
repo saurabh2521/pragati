@@ -1,0 +1,878 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width:100%;
+            overflow: hidden;
+            background-color: #4e4c4c;
+            position:-webkit-sticky;
+            top: 0px;
+            
+        }
+        li {
+            float: right;
+        }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-weight:bold;
+                font-size:large;
+                margin-left: 20px;
+                margin-right: 30px;
+            }
+               li a:hover {
+                    background-color: #333232;
+                    text-decoration:none;
+                    color:white;
+                }
+               li a:active {
+                    background-color:red;
+                    text-decoration:none;
+                    color:white;
+                }
+                
+        .header {
+            margin:0;
+            padding:0;
+            height:100px;
+            background-image:url("Image/sunrising 1.jpeg");
+            color:black;
+        }
+
+        .affix {
+            top: 0;
+            width: 100%;
+            z-index:1;
+        }
+        .col-lg-3 h1 {
+            color:#0bc475;
+            font-stretch:condensed;
+            text-align:center;
+            font-weight:bold;
+        }
+        .row {
+            height:200px;
+            width:100%;
+        }
+        .photobox {
+            height:100px;
+            width:100%;
+            background-color:blue;
+        }
+        .slidbox {
+            height:100px;
+            width:80%;
+            background-color:rgba(0,0,0,0.5);
+            color:#4efe08;
+            position:absolute; 
+            top:300px;
+            left:100px;
+            
+        }
+        .slidetext {
+            text-align:center;
+            padding-top:40px;
+
+        }
+        .number {
+            position:absolute;
+            top:-10px;
+            left:1050px;
+            color:red;        
+        }
+        .header h4 {
+            color:red;
+            position:absolute;
+            top:60px;
+            left:990px;
+        }   
+
+        #mydiv1, #mydiv2, #mydiv3, #mydiv4, #mydiv5, #mydiv6, #mydiv7, #mydiv8, #mydiv9, #mydiv10, #mydiv11, #mydiv13, #mydiv14 {
+            display:none;
+            margin-top:10px;
+        }
+        button {
+            background-color:white;
+        }
+        button img {
+            height:20px;
+            
+        }
+
+
+        </style>
+
+</head>
+<body>
+    <div class="header">
+         <img src="logo 1.jpg" style="height:50px; position:absolute; margin-top:20px; margin-left:45px;"/>
+        <h1 style="margin-top:0; padding-top:32px"><b style="font-size:70px;">S</b>olar Energy Expert</h1>
+        <h1 class="number">9599091534</h1>
+        <h4>ramesh.pragatisolar@gmail.com</h4>
+    </div> 
+    
+    <nav data-spy="affix" data-offset-top="100">
+        <ul> 
+            <li style="float:right"><a href="HtmlPage5.html">CONTACT</a> </li>
+            <li style="float:right"><a style="background-color:black; text-decoration:none; color:white;" href="#Gallery">GALLERY</a> </li>
+            <li style="float:right"><a href="HtmlPage3.html">SERVICES</a> </li>
+            <li style="float:right"><a href="HtmlPage2.html">ABOUT US</a> </li>
+            <li style="float:right"><a href="HtmlPage1.html">HOME</a> </li>
+        </ul>
+    </nav>
+       
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="imagecarousel" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="panel a.jpg" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="panel 1.jpeg" />
+                        </div>
+                        <div class="item">
+                            <img src="panel 2.jpeg" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>-->
+    <!--<div>-->
+        <h1>GALLERY</h1>
+        <div><h2 style="color:green; margin-left:125px;">Alwar</h2></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="imagecarousel" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="Alwar 1/alwar1.jpg" style="height:200px; width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="Alwar 1/alwar2.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="Alwar 1/alwar3.jpg"style="height:200px; width:100%;" />
+                        </div>
+                        <div class="item">
+                            <img src="Alwar 1/alwar4.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--</div>-->
+    <span style="font-size:20px;font-weight:bold; position:relative; top:35px; left:800px;">For more images click here <span style="font-size:30px; position:relative;top:3px;">&#8680;</span></span><button id="hide1" style="margin-left:1130px; margin-top:10px;"><img src="Icon/arrow.bmp"/></button>
+    <div id="mydiv1">
+        <div class="container">
+        <div class="row" style="height:150px;width:100%;">
+            <div class="col-lg-3">
+               <div> 
+                   <img src="Alwar 1/alwar1.jpg" style="height:150px; width:100%;"/>
+               </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Alwar 1/alwar2.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Alwar 1/alwar3.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Alwar 1/alwar4.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+        </div>
+        </div>
+   </div>
+    <br />
+    <div><h2 style="color:green; margin-left:125px;">DMRC Kalindi Kunj</h2></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="Div1" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="DMRC Kalindi Kunj/kalindi1.jpg" style="height:200px; width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="DMRC Kalindi Kunj/kalindi2.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="DMRC Kalindi Kunj/kalindi3.jpg"style="height:200px; width:100%;" />
+                        </div>
+                        <div class="item">
+                            <img src="DMRC Kalindi Kunj/kalindi4.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="DMRC Kalindi Kunj/kalindi5.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="DMRC Kalindi Kunj/kalindi6.jpeg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="DMRC Kalindi Kunj/kalindi7.jpeg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="DMRC Kalindi Kunj/kalindi8.jpeg" style="height:200px; width:100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <span style="font-size:20px;font-weight:bold; position:relative; top:35px; left:800px;">For more images click here <span style="font-size:30px; position:relative;top:3px;">&#8680;</span></span><button id="hide2" style="margin-left:1130px; margin-top:10px;"><img src="Icon/arrow.bmp"/></button>
+    <div id="mydiv2">
+        <div class="container">
+        <div class="row" style="height:150px;width:100%;">
+            <div class="col-lg-3">
+               <div> 
+                   <img src="DMRC Kalindi Kunj/kalindi1.jpg" style="height:150px; width:100%;"/>
+               </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="DMRC Kalindi Kunj/kalindi2.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="DMRC Kalindi Kunj/kalindi3.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="DMRC Kalindi Kunj/kalindi4.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            </div>
+            <br />
+            <div class="row" style="height:150px;width:100%;">
+                <div class="col-lg-3">
+                <div>
+                    <img src="DMRC Kalindi Kunj/kalindi5.jpg" style="height:150px; width:100%;"/>
+                </div>
+                </div>
+                <div class="col-lg-3">
+                <div>
+                    <img src="DMRC Kalindi Kunj/kalindi6.jpeg" style="height:150px; width:100%;"/>
+                </div>
+                </div>
+                <div class="col-lg-3">
+                <div>
+                    <img src="DMRC Kalindi Kunj/kalindi7.jpeg" style="height:150px; width:100%;"/>
+                </div>
+                </div>
+                <div class="col-lg-3">
+                <div>
+                    <img src="DMRC Kalindi Kunj/kalindi8.jpeg" style="height:150px; width:100%;"/>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <br />
+    <div><h2 style="color:green; margin-left:125px;">DMRC Shashtri Park</h2></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="Div2" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="DMRC Shashtri Park/shashtri1.jpg" style="height:200px; width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="DMRC Shashtri Park/shashtri2.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="DMRC Shashtri Park/shashtri3.jpg"style="height:200px; width:100%;" />
+                        </div>
+                        <div class="item">
+                            <img src="DMRC Shashtri Park/shashtri4.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <span style="font-size:20px;font-weight:bold; position:relative; top:35px; left:800px;">For more images click here <span style="font-size:30px; position:relative;top:3px;">&#8680;</span></span><button id="hide3" style="margin-left:1130px; margin-top:10px;"><img src="Icon/arrow.bmp"/></button>
+    <div id="mydiv3">
+        <div class="container">
+        <div class="row" style="height:150px;width:100%;">
+            <div class="col-lg-3">
+               <div> 
+                   <img src="DMRC Shashtri Park/shashtri1.jpg" style="height:150px; width:100%;"/>
+               </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="DMRC Shashtri Park/shashtri2.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="DMRC Shashtri Park/shashtri3.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="DMRC Shashtri Park/shashtri4.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+        </div>
+        </div>
+   </div>
+   <!-- <div><h2 style="color:green; margin-left:125px;">DMRC Vinod Nagar</h2></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="Div3" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="DMRC Vinod Nagar/vinod1.jpg" style="height:200px; width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="DMRC Vinod Nagar/vinod2.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="DMRC Vinod Nagar/vinod3.jpg"style="height:200px; width:100%;" />
+                        </div>
+                        <div class="item">
+                            <img src="DMRC Vinod Nagar/vinod4.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>-->
+
+    <div><h2 style="color:green; margin-left:125px;">Faridabad D.E.C</h2></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="Div4" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="Faridabad D.E.C/drishti1.jpg" style="height:200px; width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="Faridabad D.E.C/drishti2.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="Faridabad D.E.C/drishti3.jpg"style="height:200px; width:100%;" />
+                        </div>
+                        <div class="item">
+                            <img src="Faridabad D.E.C/drishti4.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+<span style="font-size:20px;font-weight:bold; position:relative; top:35px; left:800px;">For more images click here <span style="font-size:30px; position:relative;top:3px;">&#8680;</span></span><button id="hide5" style="margin-left:1130px; margin-top:10px;"><img src="Icon/arrow.bmp"/></button>
+        <div id="mydiv5">
+        <div class="container">
+        <div class="row" style="height:150px;width:100%;">
+            <div class="col-lg-3">
+               <div> 
+                   <img src="Faridabad D.E.C/drishti1.jpg" style="height:150px; width:100%;"/>
+               </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Faridabad D.E.C/drishti2.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Faridabad D.E.C/drishti3.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Faridabad D.E.C/drishti4.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+        </div>
+        </div>
+   </div>
+    <div><h2 style="color:green; margin-left:125px;">Garh Sharnkar</h2></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="Div3" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="Garh Shankar/garh1.jpg" style="height:200px; width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="Garh Shankar/garh2.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="Garh Shankar/garh3.jpg"style="height:200px; width:100%;" />
+                        </div>
+                        <div class="item">
+                            <img src="Garh Shankar/garh4.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+<span style="font-size:20px;font-weight:bold; position:relative; top:35px; left:800px;">For more images click here <span style="font-size:30px; position:relative;top:3px;">&#8680;</span></span><button id="hide6" style="margin-left:1130px; margin-top:10px;"><img src="Icon/arrow.bmp"/></button>
+        <div id="mydiv6">
+        <div class="container">
+        <div class="row" style="height:150px;width:100%;">
+            <div class="col-lg-3">
+               <div> 
+                   <img src="Garh Shankar/garh1.jpg" style="height:150px; width:100%;"/>
+               </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Garh Shankar/garh2.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Garh Shankar/garh3.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Garh Shankar/garh4.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+        </div>
+        </div>
+   </div>
+     <div><h2 style="color:green; margin-left:125px;">Jaipur</h2></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="Div5" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="Jaipur/jaipur1.jpg" style="height:200px; width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="Jaipur/jaipur2.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="Jaipur/jaipur3.jpg"style="height:200px; width:100%;" />
+                        </div>
+                        <div class="item">
+                            <img src="Jaipur/jaipur4.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+<span style="font-size:20px;font-weight:bold; position:relative; top:35px; left:800px;">For more images click here <span style="font-size:30px; position:relative;top:3px;">&#8680;</span></span><button id="hide7" style="margin-left:1130px; margin-top:10px;"><img src="Icon/arrow.bmp"/></button>
+        <div id="mydiv7">
+        <div class="container">
+        <div class="row" style="height:150px;width:100%;">
+            <div class="col-lg-3">
+               <div> 
+                   <img src="Jaipur/jaipur1.jpg" style="height:150px; width:100%;"/>
+               </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Jaipur/jaipur2.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Jaipur/jaipur3.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Jaipur/jaipur4.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+        </div>
+        </div>
+   </div>
+        <div><h2 style="color:green; margin-left:125px;">NDMC</h2></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="Div6" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="NDMC/ndmc1.jpg" style="height:200px; width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="NDMC/ndmc2.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="NDMC/ndmc3.jpg"style="height:200px; width:100%;" />
+                        </div>
+                        <div class="item">
+                            <img src="NDMC/ndmc4.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+<span style="font-size:20px;font-weight:bold; position:relative; top:35px; left:800px;">For more images click here <span style="font-size:30px; position:relative;top:3px;">&#8680;</span></span><button id="hide8" style="margin-left:1130px; margin-top:10px;"><img src="Icon/arrow.bmp"/></button>
+        <div id="mydiv8">
+        <div class="container">
+        <div class="row" style="height:150px;width:100%;">
+            <div class="col-lg-3">
+               <div> 
+                   <img src="NDMC/ndmc1.jpg" style="height:150px; width:100%;"/>
+               </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="NDMC/ndmc2.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="NDMC/ndmc3.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="NDMC/ndmc4.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+        </div>
+        </div>
+   </div>
+    <div><h2 style="color:green; margin-left:125px;">Rohtak 21kw</h2></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="Div7" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="Rohtak 21kw/shiksha1.jpg" style="height:200px; width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="Rohtak 21kw/shiksha2.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="Rohtak 21kw/shiksha3.jpg"style="height:200px; width:100%;" />
+                        </div>
+                        <div class="item">
+                            <img src="Rohtak 21kw/shiksha4.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+<span style="font-size:20px;font-weight:bold; position:relative; top:35px; left:800px;">For more images click here <span style="font-size:30px; position:relative;top:3px;">&#8680;</span></span><button id="hide9" style="margin-left:1130px; margin-top:10px;"><img src="Icon/arrow.bmp"/></button>
+        <div id="mydiv9">
+        <div class="container">
+        <div class="row" style="height:150px;width:100%;">
+            <div class="col-lg-3">
+               <div> 
+                   <img src="Rohtak 21kw/shiksha1.jpg" style="height:150px; width:100%;"/>
+               </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Rohtak 21kw/shiksha2.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Rohtak 21kw/shiksha3.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Rohtak 21kw/shiksha4.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+        </div>
+        </div>
+   </div>
+    <div><h2 style="color:green; margin-left:125px;">Rohtak 30kw</h2></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="Div8" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="Rohtak 30kw/baba1.jpg" style="height:200px; width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="Rohtak 30kw/baba2.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="Rohtak 30kw/baba3.jpg"style="height:200px; width:100%;" />
+                        </div>
+                        <div class="item">
+                            <img src="Rohtak 30kw/baba4.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+<span style="font-size:20px;font-weight:bold; position:relative; top:35px; left:800px;">For more images click here <span style="font-size:30px; position:relative;top:3px;">&#8680;</span></span><button id="hide10" style="margin-left:1130px; margin-top:10px;"><img src="Icon/arrow.bmp"/></button>
+        <div id="mydiv10">
+        <div class="container">
+        <div class="row" style="height:150px;width:100%;">
+            <div class="col-lg-3">
+               <div> 
+                   <img src="Rohtak 30kw/baba1.jpg" style="height:150px; width:100%;"/>
+               </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Rohtak 30kw/baba2.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Rohtak 30kw/baba3.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Rohtak 30kw/baba4.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+        </div>
+        </div>
+   </div>
+    <div><h2 style="color:green; margin-left:125px;">Rohtak Industrial 16kw</h2></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="Div9" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="Rohtak Industrial 16kw/jbi1.jpg" style="height:200px; width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="Rohtak Industrial 16kw/jbi2.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="Rohtak Industrial 16kw/jbi3.jpg"style="height:200px; width:100%;" />
+                        </div>
+                        <div class="item">
+                            <img src="Rohtak Industrial 16kw/jbi4.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+<span style="font-size:20px;font-weight:bold; position:relative; top:35px; left:800px;">For more images click here <span style="font-size:30px; position:relative;top:3px;">&#8680;</span></span><button id="hide11" style="margin-left:1130px; margin-top:10px;"><img src="Icon/arrow.bmp"/></button>
+        <div id="mydiv11">
+        <div class="container">
+        <div class="row" style="height:150px;width:100%;">
+            <div class="col-lg-3">
+               <div> 
+                   <img src="Rohtak Industrial 16kw/jbi1.jpg" style="height:150px; width:100%;"/>
+               </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Rohtak Industrial 16kw/jbi2.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Rohtak Industrial 16kw/jbi3.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Rohtak Industrial 16kw/jbi4.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+        </div>
+        </div>
+   </div>
+       <div><h2 style="color:green; margin-left:125px;">Rohtak Residential 10kw</h2></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="Div10" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="Rohtak Residential 10kw/residential1.jpg" style="height:200px; width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="Rohtak Residential 10kw/residential2.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                        <div class="item">
+                            <img src="Rohtak Residential 10kw/residential3.jpg"style="height:200px; width:100%;" />
+                        </div>
+                        <div class="item">
+                            <img src="Rohtak Residential 10kw/residential4.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+<span style="font-size:20px;font-weight:bold; position:relative; top:35px; left:800px;">For more images click here <span style="font-size:30px; position:relative;top:3px;">&#8680;</span></span><button id="hide12" style="margin-left:1130px; margin-top:10px;"><img src="Icon/arrow.bmp"/></button>
+        <div id="mydiv12">
+        <div class="container">
+        <div class="row" style="height:150px;width:100%;">
+            <div class="col-lg-3">
+               <div> 
+                   <img src="Rohtak Residential 10kw/residential1.jpg" style="height:150px; width:100%;"/>
+               </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Rohtak Residential 10kw/residential2.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Rohtak Residential 10kw/residential3.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Rohtak Residential 10kw/residential4.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+        </div>
+        </div>
+   </div>
+       <div><h2 style="color:green; margin-left:125px;">Rohtak Shop 4kw</h2></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="Div11" class="carousel slide" data-interval="1000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="Rohtak Shop 4kw/balaji1.jpg" style="height:200px; width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="item">
+                            <img src="Rohtak Shop 4kw/balaji2.jpg" style="height:200px; width:100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+<span style="font-size:20px;font-weight:bold; position:relative; top:35px; left:800px;">For more images click here <span style="font-size:30px; position:relative;top:3px;">&#8680;</span></span><button id="hide13" style="margin-left:1130px; margin-top:10px;"><img src="Icon/arrow.bmp"/></button>
+        <div id="mydiv13">
+        <div class="container">
+        <div class="row" style="height:150px;width:100%;">
+            <div class="col-lg-3">
+               <div> 
+                   <img src="Rohtak Shop 4kw/balaji1.jpg" style="height:150px; width:100%;"/>
+               </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <img src="Rohtak Shop 4kw/balaji2.jpg" style="height:150px; width:100%;"/>
+                </div>
+            </div>
+           
+        </div>
+        </div>
+   </div>
+    <br />
+
+    <div style="height:50px; width:100%;"></div>
+    <div class="photobox"></div>
+
+
+    <script>
+        $('#hide1').click(function () {
+            $("#mydiv1").toggle(200);
+        });
+        $('#hide2').click(function () {
+            $("#mydiv2").toggle(200);
+        });
+        $('#hide3').click(function () {
+            $("#mydiv3").toggle(200);
+        });
+        $('#hide4').click(function () {
+            $("#mydiv4").toggle(200);
+        });
+        $('#hide5').click(function () {
+            $("#mydiv5").toggle(200);
+        });
+        $('#hide6').click(function () {
+            $("#mydiv6").toggle(200);
+        });
+        $('#hide7').click(function () {
+            $("#mydiv7").toggle(200);
+        });
+        $('#hide8').click(function () {
+            $("#mydiv8").toggle(200);
+        });
+        $('#hide9').click(function () {
+            $("#mydiv9").toggle(200);
+        });
+        $('#hide10').click(function () {
+            $("#mydiv10").toggle(200);
+        });
+        $('#hide11').click(function () {
+            $("#mydiv11").toggle(200);
+        });
+        $('#hide12').click(function () {
+            $("#mydiv12").toggle(200);
+        });
+        $('#hide13').click(function () {
+            $("#mydiv13").toggle(200);
+        });
+    </script>
+</body>
+</html>

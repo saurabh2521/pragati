@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B4442363-3E5F-40ED-8151-D4D1220FBF11}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication4</RootNamespace>
+    <AssemblyName>WebApplication4</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Alwar 1\alwar1.jpg" />
+    <Content Include="Alwar 1\alwar2.jpg" />
+    <Content Include="Alwar 1\alwar3.jpg" />
+    <Content Include="Alwar 1\alwar4.jpg" />
+    <Content Include="DMRC Kalindi Kunj\kalindi1.jpg" />
+    <Content Include="DMRC Kalindi Kunj\kalindi2.jpg" />
+    <Content Include="DMRC Kalindi Kunj\kalindi3.jpg" />
+    <Content Include="DMRC Kalindi Kunj\kalindi4.jpg" />
+    <Content Include="DMRC Kalindi Kunj\kalindi5.jpg" />
+    <Content Include="DMRC Kalindi Kunj\kalindi6.jpeg" />
+    <Content Include="DMRC Kalindi Kunj\kalindi7.jpeg" />
+    <Content Include="DMRC Kalindi Kunj\kalindi8.jpeg" />
+    <Content Include="DMRC Shashtri Park\shashtri1.jpg" />
+    <Content Include="DMRC Shashtri Park\shashtri2.jpg" />
+    <Content Include="DMRC Shashtri Park\shashtri3.jpg" />
+    <Content Include="DMRC Shashtri Park\shashtri4.jpg" />
+    <Content Include="DMRC Shashtri Park\shashtri5.jpg" />
+    <Content Include="DMRC Shashtri Park\shashtri6.jpg" />
+    <Content Include="DMRC Shashtri Park\shashtri7.jpg" />
+    <Content Include="DMRC Shashtri Park\shashtri8.jpg" />
+    <Content Include="DMRC Vinod Nagar\vinod1.jpg" />
+    <Content Include="DMRC Vinod Nagar\vinod2.jpg" />
+    <Content Include="DMRC Vinod Nagar\vinod3.jpg" />
+    <Content Include="DMRC Vinod Nagar\vinod4.jpg" />
+    <Content Include="Faridabad D.E.C\drishti1.jpg" />
+    <Content Include="Faridabad D.E.C\drishti2.jpg" />
+    <Content Include="Faridabad D.E.C\drishti3.jpg" />
+    <Content Include="Faridabad D.E.C\drishti4.jpg" />
+    <Content Include="Garh Shankar\garh1.jpg" />
+    <Content Include="Garh Shankar\garh2.jpg" />
+    <Content Include="Garh Shankar\garh3.jpg" />
+    <Content Include="Garh Shankar\garh4.jpg" />
+    <Content Include="Icon\addicon.png" />
+    <Content Include="Icon\arrow.bmp" />
+    <Content Include="Icon\gicon.png" />
+    <Content Include="Icon\gmap.jpg" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="HtmlPage2.html" />
+    <Content Include="HtmlPage3.html" />
+    <Content Include="HtmlPage4.html" />
+    <Content Include="HtmlPage5.html" />
+    <Content Include="HtmlPage6.html" />
+    <Content Include="HtmlPage7.html" />
+    <Content Include="HtmlPage8.html" />
+    <Content Include="Icon\icon.png" />
+    <Content Include="Image\clean energy.jpg" />
+    <Content Include="Image\environment.jpg" />
+    <Content Include="Image\himage1.jpg" />
+    <Content Include="Image\himage2.jpg" />
+    <Content Include="Image\himage3.jpg" />
+    <Content Include="Image\himage4.jpg" />
+    <Content Include="Image\himage5.jpg" />
+    <Content Include="Image\low maintaince.jpg" />
+    <Content Include="Image\reneable.jpg" />
+    <Content Include="Image\save money.jpg" />
+    <Content Include="Jaipur\jaipur2.jpg" />
+    <Content Include="Jaipur\jaipur1.jpg" />
+    <Content Include="Jaipur\jaipur4.jpg" />
+    <Content Include="Jaipur\jaipur3.jpg" />
+    <Content Include="Icon\logo 1.jpg" />
+    <Content Include="NDMC\ndmc1.jpg" />
+    <Content Include="NDMC\ndmc2.jpg" />
+    <Content Include="NDMC\ndmc3.jpg" />
+    <Content Include="NDMC\ndmc4.jpg" />
+    <Content Include="Rohtak 21kw\shiksha1.jpg" />
+    <Content Include="Rohtak 21kw\shiksha2.jpg" />
+    <Content Include="Rohtak 21kw\shiksha3.jpg" />
+    <Content Include="Rohtak 21kw\shiksha4.jpg" />
+    <Content Include="Rohtak 30kw\baba1.jpg" />
+    <Content Include="Rohtak 30kw\baba2.jpg" />
+    <Content Include="Rohtak 30kw\baba3.jpg" />
+    <Content Include="Rohtak 30kw\baba4.jpg" />
+    <Content Include="Rohtak Industrial 16kw\jbi1.jpg" />
+    <Content Include="Rohtak Industrial 16kw\jbi2.jpg" />
+    <Content Include="Rohtak Industrial 16kw\jbi3.jpg" />
+    <Content Include="Rohtak Industrial 16kw\jbi4.jpg" />
+    <Content Include="Rohtak Residential 10kw\residential1.jpg" />
+    <Content Include="Rohtak Residential 10kw\residential2.jpg" />
+    <Content Include="Rohtak Residential 10kw\residential3.jpg" />
+    <Content Include="Rohtak Residential 10kw\residential4.jpg" />
+    <Content Include="Rohtak Shop 4kw\balaji1.jpg" />
+    <Content Include="Rohtak Shop 4kw\balaji2.jpg" />
+    <Content Include="Scroll image\panel5.jpg" />
+    <Content Include="Scroll image\panel1.jpeg" />
+    <Content Include="Scroll image\panel2.jpeg" />
+    <Content Include="Scroll image\panel3.jpg" />
+    <Content Include="Scroll image\panel4.jpg" />
+    <Content Include="Image\safty.jpg" />
+    <Content Include="Image\ser1.png" />
+    <Content Include="Image\ser2.png" />
+    <Content Include="Image\ser3.png" />
+    <Content Include="Image\solar.jpg" />
+    <Content Include="Image\sunrising 1.jpeg" />
+    <Content Include="Image\Teamwork.jpg" />
+    <Content Include="Image\vision and mission.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3655/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
